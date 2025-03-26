@@ -36,7 +36,6 @@ jobs:
         run: |
           mkdir .\out\sample\out -ErrorAction SilentlyContinue
           copy .\README.md .\out /Y
-          copy .\sample\out\* .\out\sample\out /Y
         shell: cmd # 使用 Windows CMD 語法
 
       # 建立 ZIP 檔案
