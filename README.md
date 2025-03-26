@@ -6,9 +6,10 @@
 
 發版小工具
 
-| 版本  | 日期         | 變更者   | 說明 |
-| :---- | :----------- | :------- | :--- |
-| `1.0` | `2024/12/19` | `zhewei` | 初版 |
+| 版本  | 日期         | 變更者   | 說明              |
+| :---- | :----------- | :------- | :---------------- |
+| `1.0` | `2024/12/19` | `zhewei` | 初版              |
+| `1.1` | `2025/03/26` | `zhewei` | 新增 Auto Release |
 
 ## 前言
 
@@ -28,7 +29,7 @@ Usage:
 ```shell
 # usage: compare.exe [-h] old new
 
-python compare oldpath newpath
+compare.exe oldpath newpath
 ```
 
 參數說明:
@@ -42,7 +43,7 @@ python compare oldpath newpath
 範例:
 
 ```shell
-python compare .\source\NPC-DT3-19 .\source\NPC-DT3-28
+compare.exe .\source\NPC-DT3-19 .\source\NPC-DT3-28
 ```
 
 輸出檔案可參考 `./samlpe/out/compare.xlsx`
@@ -59,7 +60,7 @@ Usage:
 ```shell
 # usage: parsergerrit.exe [-h] -n number
 
-python parsergerrit -n gerrit_number
+parsergerrit.exe -n gerrit_number
 ```
 
 參數說明:
@@ -72,7 +73,7 @@ python parsergerrit -n gerrit_number
 範例:
 
 ```shell
-python parsergerrit -n 29743
+parsergerrit.exe -n 29743
 ```
 
 輸出檔案可參考 `./samlpe/out/gerrit-29743.xlsx`

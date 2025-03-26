@@ -41,7 +41,7 @@ jobs:
       # 建立 ZIP 檔案
       - name: Create ZIP file
         run: |
-          powershell -Command "Compress-Archive -Path .\out\* -DestinationPath release.zip"
+          powershell -Command "Compress-Archive -Path .\out\* -DestinationPath ${{ github.repository_name }}-${{ github.ref_name }}.zip"
         # 使用 PowerShell 壓縮 out 目錄
 
       # 建立 Release
